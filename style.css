@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Fredoka One', cursive;
+    background-image: linear-gradient(to left, #eeaeca, #94bbe9);
+    color: #fff;
+}
+
+.image {
+    box-shadow: #6b5982 0 1px 6px;
+    border: none;
+    border-radius: 50%;
+}
+.header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 50px;
+    text-shadow: #4f3b6a 1px 0 10px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.inputField {
+    width: 600px;
+    text-align: center;
+}
+.input {
+    outline: none;
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #F7F7F7;
+    font-size: 25px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.input:focus {
+    box-shadow: 0 0 5px #eeaeca;
+    border: 1px solid  #eeaeca;
+}
+
+.btn {
+    cursor: pointer;
+    height: 51px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    outline: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #EEEEEE;
+    border: 1px solid lightgrey;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 25px;
+    color: #716F81;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+.toDoContainer {
+    width: 600px;;
+    margin: auto;
+}
+
+.itemAdded {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: #EEEEEE;;
+    border-radius: 3px;
+    padding: 15px;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 16px;;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.itemAdded:hover {
+    box-shadow: 0 0 20px #eeaeca;
+    border: 1px solid #eeaeca;
+}
+i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+@media all and (max-width:800px){
+    .image {
+        width: 170px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media all and (max-width:500px) {
+    .image {
+        width: 150px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
